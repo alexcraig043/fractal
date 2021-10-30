@@ -7,8 +7,6 @@ function setup()
     // Create iteration slider:
     iterationSlider = createSlider(1, 8, 1, 1);
     iterationSlider.position(windowWidth / 2, (5/6) * windowHeight).center('horizontal');
-    //Create size slider:
-
 
 }
 
@@ -47,6 +45,7 @@ function iterateTriangle(x, y, size, iterations)
 
         //Right Triangle:
         iterateTriangle(x + size / 2, y, size / 2, iterations);
+        
         //Top Triangle:
         iterateTriangle(x + size / 4, y - size / 2.3, size / 2, iterations);
     }
